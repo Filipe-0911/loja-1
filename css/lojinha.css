@@ -1,0 +1,27 @@
+* {
+    font-family: 'Sedgwick Ave Display', 'Comic Sans MS';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+h1{
+    border:5px solid #000;
+    border-radius: 30px;
+    margin: 30px 0;
+    padding:70px 0 30px 0;
+    color: #fff;
+}
+#cifrao {
+    color:green;
+}
+footer {
+    background-color: #555555;
+    padding: 20px;
+    color: #ffffff;
+}
+.produto-item {
+    color:red;
+    font:bolder;
+    font-weight: 700;
+}

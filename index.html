@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lojinha.css" />
+    <script src="js/funcoes.js" ></script>
+    <title>Lojinha</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center" style="background-image:url(img/favela.jpg);"><i id="cifrao"
+                class="bi bi-currency-dollar"></i>Lojinha da Qu3Br@d4</h1>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço unitário</th>
+                    <th>Qtd</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/celular.jpeg" alt="celular" height="200">
+                    </td>
+                    <td>
+                        <div>Celular topzera</div>
+                        <div><span class="produto-item">Código:</span> 123456</div>
+                        <div><span class="produto-item">Cor:</span> preto</div>
+
+                    </td>
+                    <td id="valor_1">
+                        R$ 3500
+                    </td>
+                    <td>
+                        <span class="badge bg-danger" onclick="alterarQtd(1, '-')"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_1" >0</span>
+                        <span class="badge bg-success" onclick="alterarQtd(1, '+')"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_1" >
+                        0
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/notebook.jpg" alt="notebook" width="200">
+                    </td>
+                    <td>
+                        <div>Notebook top das galáxias</div>
+                        <div><span class="produto-item">Código:</span> 654321</div>
+                        <div><span class="produto-item">Cor:</span> prata</div>
+
+                    </td>
+                    <td id="valor_2">
+                        R$ 5000
+                    </td>
+                    <td>
+                        <span class="badge bg-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_2" >0</span>
+                        <span class="badge bg-success" onclick="alterarQtd(2, '+')"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_2">
+                        0
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/televisao.jpg" alt="televisao" width="200">
+                    </td>
+                    <td>
+                        <div>Televisão zica do pântano</div>
+                        <div><span class="produto-item">Código:</span> 981723</div>
+                        <div><span class="produto-item">Cor:</span> preto</div>
+
+                    </td>
+                    <td id="valor_3" >
+                        R$ 2000
+                    </td>
+                    <td>
+                        <span class="badge bg-danger" onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_3" >0</span>
+                        <span class="badge bg-success" onclick="alterarQtd(3, '+')"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_3" >
+                        0
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <footer class="text-center">
+            <span>
+                <i class="bi bi-cart-check"></i> Subtotal: <span id="subtotal">R$ 0</span>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
